@@ -11,3 +11,17 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+# [cmder] python manage.py migrate --update the models
+# [cmder] python manage.py sqlmigrate blog 0001 --check out the db
+
+# [cmder] python manage.py shell
+# >>> from blog.models import Post
+# >>> (line 3)
+
+# >>> User.objects.all()
+# >>> User.objects.get(id=?)
+# >>> User.objects.filter(username=?)
+
+# >>> post_1 = Post(title='Blog 1', .......)
+# >>> post_1.save()
